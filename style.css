@@ -3,14 +3,23 @@
   color: #252432;
   font-weight: 800;
 }
-.normal-color{
+.nav-color{
   color:#8987A1;
+}
+.normal-color{
+  color: rgba(0, 0, 0, 0.5);
 }
 .solid-color-black{
   color:#000000;
 }
+.extra-solid-color-black{
+  color:#111111;
+}
 .solid-color-orange{
   color:#E95A08;
+}
+.solid-color-white{
+  color:#FFFFFF;
 }
 
 .inter-font{
@@ -77,22 +86,70 @@ body{
   font-size: 1.37rem;
 }
 
-@media  (max-width:576px) {
+/*style plant section*/
+.plant-title{
+  font-size: 3.12rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.plant-subtitle{
+  font-size: 1.37rem;
+  text-align: center;
+}
+.card-section{
+  margin-top: 49px;
+  display: grid;
+  gap: 60px 20px;
+  grid-template-columns: repeat(4,1fr);
+
+}
+.card{
+  width:270px;
+  height:480px;
+}
+.card-name{
+  font-size: 1.38rem;
+  font-weight: 500;
+  text-align: center;
+}
+.card-price{
+  font-size: 1.38rem;
+  font-weight: 800;
+  text-align: center;
+}
+.card-button{
+  width: 100%;
+  padding: 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #E95A08;
+  border:none;
+
+}
+
+@media screen and (max-width:576px) {
+
   body{
     width: 100%;
   }
+
   .header-section,
   .hero-text,
-  .hero-title{
+  .hero-title,
+  .card-section
+  {
     margin:13px 16px;
   }
+
   .list{
     display: none;
   }
+
   .logo-image{
     width: 63px;
     height: 38px;
   }
+
   .hero{
     margin-top: 28px;
     flex-direction: column-reverse;
@@ -106,6 +163,31 @@ body{
   .hero-text{
     font-size: 1rem;
   }
+  .plant-title{
+  font-size: 1.5rem;
+  }
+  .plant-subtitle{
+  font-size: 0.87rem;
+  text-align: center;
+  }
+  .card-section{
+    grid-template-columns: repeat(2,1fr);
+    gap:30px 50px;
+  }
+  .card{
+    width: 171px;
+    height: 340px;
+  }
+  .card-image{
+    width: 100%;
+  }
+  .card-name{
+    font-size: 1rem;
+  }
+  .card-price{
+    font-size: 1rem;
+  }
+  .card-button{
+    padding: 10px;
+  }
 }
-
-
