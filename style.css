@@ -42,6 +42,8 @@
 body{
   max-width: 1140px;
   margin: 0 auto;
+  background-color: #f5f7fc;
+  overflow-x: hidden;
 }
 /*header style*/
 .header-section{
@@ -153,6 +155,41 @@ body{
   margin-top: 20px;
 }
 
+/*style join section*/
+.join-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 533px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-image: url(assets/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 20px;
+}
+
+.join-title{
+  font-size: 3rem;
+}
+.join-section input{
+  width:644px;
+  height: 50px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+.join-section-button{
+  background-color: #E95A08;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 54px;
+  width: 186px;
+  border: none;
+}
+.input-section{
+  gap:0;
+}
 @media screen and (max-width:576px) {
 
   body{
@@ -226,6 +263,18 @@ body{
   }
   .plant-lover img{
     width: 100%;
+  }
+  .join-section{
+    height:276px;
+  }
+  .join-title{
+    font-size: 1.3rem;
+  }
+  .join-section input{
+    width:218px;
+  }
+  .join-section-button{
+    width:109px;
   }
 
 }
