@@ -346,7 +346,11 @@ body{
     width: 100%;
   }
   .join-section{
-    display: none;
+    height: 275px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
   }
   .join-title{
     font-size: 1.3rem;
