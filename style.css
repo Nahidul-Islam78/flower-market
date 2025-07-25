@@ -190,6 +190,27 @@ body{
 .input-section{
   gap:0;
 }
+.footer-section{
+  height: 248px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text{
+  font-size: 1.5rem;
+}
+.footer-item li{
+  list-style: none;
+  margin-bottom: 25px;
+}
+.footer-item li a{
+  text-decoration: none;
+  color:#8F95A0;
+
+}
+.social-link{
+  margin-right: 20px;
+}
 @media screen and (max-width:576px) {
 
   body{
@@ -201,6 +222,7 @@ body{
   .hero-title,
   .card-section
   .plant-lover
+  .footer-section
   {
     margin:13px 16px;
   }
@@ -275,6 +297,9 @@ body{
   }
   .join-section-button{
     width:109px;
+  }
+  .footer-section{
+    flex-direction: column;
   }
 
 }
